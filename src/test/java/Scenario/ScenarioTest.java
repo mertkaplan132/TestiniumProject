@@ -24,7 +24,7 @@ public class ScenarioTest extends Base {
         steps.clickElement("div[class='pr-cn-in'] div[class='add-to-bs-tx']");
         steps.clickElement("i[class='icon navigation-icon-basket']");
         steps.waitSecond(2);
-        steps.denenme();
+        steps.denenme();//fdhdfhjgkjk
         steps.clickElement("button[class='btn-item btn-remove']");
         steps.getTextControlTest("div[class='col-lg-8 col-md-8 col-xs-8'] span", "Sepetinizde ürün bulunmamaktadır.");
     }
