@@ -61,21 +61,21 @@ public class Steps extends Methods {
 
 
 
-    public void denenme(){
+    public void changeControl(){
         if (driver.findElements(By.cssSelector("div[class='pb-basket-item-price']")).size()>0){
-            textControlTest("div[class='pb-basket-item-price']");
-            clickElement("button[class='ty-numeric-counter-button']");
-            waitSecond(2);
-            getAttributeControlTest("input[class='counter-content']","2");
-            clickElement("i[class='i-trash']");
+            textControlTest("div[class='pb-basket-item-price']"); // ürün fiyatını kontrol et
+            clickElement("button[class='ty-numeric-counter-button']"); //ürün adet arttır
+            waitSecond(2); // 2 saniye bekle
+            getAttributeControlTest("input[class='counter-content']","2"); //ürün adeti 2 mi kontrol et
+            clickElement("i[class='i-trash']"); //ürünü kaldır butonuna bas
 
 
         }else {
-            textControlTest("div[class*='priceInfo']");
-            SelectElement("select[class*='basketItemQuantity']","2");
-            waitSecond(2);
-            getTextControlTest("select[class*='basketItemQuantity'] option[selected='selected']","2");
-            clickElement("a[class='removeitem']");
+            textControlTest("div[class*='priceInfo']"); //ürün fiyatını kontrol et
+            SelectElement("select[class*='basketItemQuantity']","2"); //ürün adetini 2 yap
+            waitSecond(2); //2 saniye bekle
+            getTextControlTest("select[class*='basketItemQuantity'] option[selected='selected']","2"); //ürün adeti 2 mi kontrol et
+            clickElement("a[class='removeitem']"); //ürünü kaldır butonuna bas
 
         }
 
